@@ -1,3 +1,104 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+    text-align: center;
+}
+
+
+#container {
+        width: auto;
+        height: auto;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+}
+
+#header {
+    margin-bottom: 20px;
+    border: 1px solid #bcbcbc;
+}
+
+#search{
+    margin-bottom: 10px;
+}
+
+#search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+#search_result{
+    height: 300px;
+    background-color: yellow;
+    border: 1px solid #bcbcbc;
+}
+
+#search_recommendation{
+    height: 300px;
+    background-color: gray;
+    border: 1px solid #bcbcbc;
+}
+
+.hidden{
+    display:none;
+}
+
+#recommendation1 {
+    height: 300px;
+    background-color: red;
+    border: 1px solid #bcbcbc;
+}
+
+#recommendation2 {
+    height: 300px;
+    background-color: black;
+    border: 1px solid #bcbcbc;
+}
+
+#info{
+    height: 100px;
+    background-color: purple;
+    border: 1px solid #bcbcbc;
+}
+
+#mysongs{
+    height: 300px;
+    background-color: green;
+    border: 1px solid #bcbcbc;
+}
+
+#footer {
+    margin-top:10px;
+    height: 50px;
+    clear: both;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+}

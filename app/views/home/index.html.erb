@@ -1,26 +1,44 @@
 
-<!--검색 공간-->
-<div id="search">
-  <form>
-    <input type="text">
-    <input type="submit" value="검색">
-  </form>
+<div id="container">
+  <div class="row">
+    <!--검색 공간-->
+    <div id="search" class="col-sx-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+      <div id="search-input" >
+        <div class="input-group">
+          <input type="text" class="form-control input-lg" placeholder="노래를 검색하세요." />
+          <span class="input-group-btn">
+            <button class="btn btn-info btn-lg" type="button">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <!--검색 결과 공간-->
+    <div id="search_result" class="hidden col-sx-12 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2" >
+      <p>검색 결과 뜨는 곳</p>
+    </div>
+    <!--검색 결과 관련 추천 공간-->
+    <div id="search_recommendation" class="hidden col-sm-4 col-md-4">
+      <p>검색 결과 관련 추천</p>
+    </div>
+  </div>
+  <div class="row">
+    <!--추천 공간-->
+    <div id="recommendation1" class="col-sx-12 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+      <p>추천 내용</p>
+    </div>
+    <!--추천 공간-->
+    <div id="recommendation2" class="col-sx-12 col-sm-4 col-md-4" >
+      <p>추천 내용</p>
+    </div>
+  </div>
 </div>
 
-
-<!--검색 결과 공간-->
-<div id="search_result">
-  <iframe src="http://www.tjmedia.com" height="200" width="300"></iframe>
-</div>
-
-
-<!--검색 결과 관련 추천 공간-->
-<div id="search_recommendation">
-  
-</div>
-
-
-<!--추천 공간-->
-<div id="recommendation">
-  
-</div>
+<script>
+  $( ".glyphicon-search" ).click(function() {
+    $( "#search_result, #search_recommendation" ).removeClass( "hidden" );
+  });
+</script> 

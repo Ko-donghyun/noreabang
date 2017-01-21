@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'home#index'
   
   get 'home/index'
+  get 'home/extra_info'
   post 'home/search'
   post 'home/search_origin'
   
